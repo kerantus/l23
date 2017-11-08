@@ -4,17 +4,17 @@
   #имя
   <div class="form-group">
     <label>Ваше ФИО</label>
-    <input name="user_name" type="text" class="form-control" placeholder="ФИО">
+    <input name="user_name" type="text" class="form-control time" placeholder="ФИО">
   </div>
   #телефон
   <div class="form-group">
     <label>Ваш телефон</label>
-    <input type="text" class="form-control" name="user_phone" placeholder="Ваш телефон">
+    <input id='name' type="text" class="form-control" name="user_phone" placeholder="Ваш телефон">
   </div>
   #время
   <div class="form-group">
     <label>Время посищения салона</label>
-    <input type="datetime" class="form-control" name="user_time" placeholder="Время посещения">
+    <input type="datetime" class="form-control time" name="user_time" placeholder="Время посещения">
   </div>
   </br>
   #выбрать мастера
@@ -31,3 +31,8 @@
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+<script type="text/javascript">
+  $('.time').css('color','brown')
+  $('#name').css('background-color','blue')
+
+</script>
