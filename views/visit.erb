@@ -1,0 +1,33 @@
+<h1>Записаться на посещение</h1>
+
+<form actions="writeof" method="POST" role="form">
+  #имя
+  <div class="form-group">
+    <label>Ваше ФИО</label>
+    <input name="user_name" type="text" class="form-control" placeholder="ФИО">
+  </div>
+  #телефон
+  <div class="form-group">
+    <label>Ваш телефон</label>
+    <input type="text" class="form-control" name="user_phone" placeholder="Ваш телефон">
+  </div>
+  #время
+  <div class="form-group">
+    <label>Время посищения салона</label>
+    <input type="text" class="form-control" name="user_time" placeholder="Время посещения">
+  </div>
+  </br>
+  #выбрать мастера
+  <div class="form-group">
+    <select name="user_master" class="form-group" type="text" role="form">
+      <option value="Мастер 1">Мастер 1</option>
+      <option VALUE="Мастер 2">Мастер 2</option>
+      <option VALUE="Мастер 3">Мастер 3</option>
+    </select>
+  </div>
+  </br>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
