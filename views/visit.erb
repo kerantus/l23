@@ -4,20 +4,23 @@
   #имя
   <div class="form-group">
     <label>Ваше ФИО</label>
-    <input name="user_name" type="text" class="form-control time" placeholder="ФИО">
+    <input name="user_name" type="text" class="form-control" placeholder="ФИО">
   </div>
   #телефон
   <div class="form-group">
     <label>Ваш телефон</label>
-    <input id='name' type="text" class="form-control" name="user_phone" placeholder="Ваш телефон">
+    <input type="text" class="form-control" name="user_phone" placeholder="Ваш телефон">
   </div>
   #время
   <div class="form-group">
     <label>Время посищения салона</label>
-    <input type="datetime" class="form-control time" name="user_time" placeholder="Время посещения">
+    <input type="datetime" class="form-control" name="user_time" placeholder="Время посещения">
   </div>
   </br>
   #выбрать мастера
+  </br>
+  </div>
+
   <div class="form-group">
     <select name="user_master" class="form-group" type="text">
       <option>Мастер 1</option>
@@ -26,13 +29,30 @@
     </select>
   </div>
   </br>
+  <div class="form-group">
+    <label>Выберете цвет краски</label>
+
+
+  <select id="color" name="color">
+      <option value="#7bd148">Green</option>
+      <option value="#5484ed">Bold blue</option>
+      <option value="#a4bdfc">Blue</option>
+      <option value="#46d6db">Turquoise</option>
+      <option value="#7ae7bf">Light green</option>
+      <option value="#51b749">Bold green</option>
+      <option value="#fbd75b">Yellow</option>
+      <option value="#ffb878">Orange</option>
+      <option value="#ff887c">Red</option>
+      <option value="#dc2127">Bold red</option>
+      <option value="#dbadff">Purple</option>
+      <option value="#e1e1e1">Gray</option>
+    </select>
+
   </div>
 
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 <script type="text/javascript">
-  $('.time').css('color','brown')
-  $('#name').css('background-color','blue')
-
+  $('#color').simplecolorpicker();
 </script>

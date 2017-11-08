@@ -19,11 +19,12 @@ post '/writeof' do
   @user_phone = params[:user_phone]
   @user_time = params[:user_time]
   @user_master = params[:user_master]
+  @user_color = params[:color]
   @title = 'Thank you'
   @message = "#{@user_name}, вы записаны к #{@user_master} на #{@user_time}"
 
   f = File.open "./public/users.txt", "a"
-  f.write "\n #{@user_master} \n #{@user_time} -- #{@user_phone} -- #{@user_name} \n"
+  f.write "\n #{@user_master} \n #{@user_time} -- #{@user_phone} -- #{@user_name} -- #{@user_color} \n"
   f.close
   erb :message
 end
